@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Merienda&family=Mochiy+Pop+One&display=swap');
+
+body {
+    background-image: url(../images/tela-de-fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Courgette', cursive;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.logo-one-piece {
+    max-width: 90%;
+    max-height: 350px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.personagem-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 60px 0;
+}
+
+.lista-personagem {
+    width: 310px;
+    height: 520px;
+    position: relative;
+}
+
+.btn-seta {
+    background-color: #ffffff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn-seta.btn-voltar {
+    transform: rotate(180deg);
+}
+
+.btn-seta:hover {
+    background-color: #1075ced2;
+}
+
+.cartao {
+    opacity: 0;
+    background-color: rgb(137, 43, 226);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(35, 35, 41, 0.566) 7px 7px 29px 0px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.cartao.selecionado {
+    opacity: 1;
+    z-index: 1;
+}
+
+.fundo-1 {
+    background: url(../images/fundo-luffy.jpg) no-repeat;
+}
+
+.fundo-2 {
+    background: url(../images/fundo-zoro.jpg) no-repeat;
+}
+
+.fundo-3 {
+    background: url(../images/fundo-sanji.jpg) no-repeat;
+}
+
+.fundo-4 {
+    background: url(../images/fundo-brooky.jpg) no-repeat;
+}
+
+.fundo-5 {
+    background: url(../images/fundo-usopp.jpg) no-repeat;
+}
+
+.fundo-6 {
+    background: url(../images/fundo-chopper.jpg) no-repeat;
+}
+
+.fundo-7 {
+    background: url(../images/fundo-nami.jpg) no-repeat;
+}
+
+.fundo-8 {
+    background: url(../images/fundo-robin.jpg) no-repeat;
+}
+
+.fundo-9 {
+    background: url(../images/fundo-franky.jpg) no-repeat;
+}
+
+.cartao .personagem {
+    background-color: rgba(179, 177, 185, .7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cartao .personagem .nome {
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    text-shadow: 1px 2px 3px #000000;
+}
+
+.cartao .personagem .cargo {
+    background-color: rgba(12, 12, 12, 0.308);
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 2px 3px #000000;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cartao .personagem .cargo.luffy {
+    background: linear-gradient(150deg, rgb(232, 104, 104), rgb(202, 53, 53), rgb(132, 14, 14));
+}
+
+.cartao .personagem .cargo.zoro {
+    background: linear-gradient(150deg, rgb(58, 235, 79), rgb(56, 180, 34), rgb(3, 73, 11));
+}
+
+.cartao .personagem .cargo.sanji {
+    background: linear-gradient(150deg, rgb(62, 86, 241), rgb(26, 67, 181), rgb(4, 31, 108));
+}
+
+.cartao .personagem .cargo.brook {
+    background: linear-gradient(150deg, rgb(231, 245, 76), rgb(182, 195, 31), rgb(149, 151, 7));
+}
+
+.cartao .personagem .cargo.usopp {
+    background: linear-gradient(150deg, rgb(159, 135, 74), rgb(113, 91, 34), rgb(47, 35, 2));
+}
+
+.cartao .personagem .cargo.chopper {
+    background: linear-gradient(150deg, rgb(251, 123, 208), rgb(194, 50, 151), rgb(155, 15, 99));
+}
+
+.cartao .personagem .cargo.nami {
+    background: linear-gradient(150deg, rgb(250, 164, 82), rgb(236, 123, 42), rgb(188, 68, 3));
+}
+
+.cartao .personagem .cargo.robin {
+    background: linear-gradient(150deg, rgb(140, 87, 230), rgb(123, 28, 146), rgb(62, 4, 91));
+}
+
+.cartao .personagem .cargo.franky {
+    background: linear-gradient(150deg, rgb(118, 247, 251), rgb(41, 146, 146), rgb(4, 82, 102));
+}
+
+.cartao .container-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartao .imagem-personagem {
+    max-width: 100%;
+    max-height: 300px;
+    padding: 10px;
+}
+
+.cartao .informacoes {
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cartao .informacoes .complemento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.305);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cartao .informacoes .complemento.luffy {
+    background: linear-gradient(300deg, rgb(232, 104, 104), rgb(202, 53, 53), rgb(132, 14, 14));
+}
+
+.cartao .informacoes .complemento.zoro {
+    background: linear-gradient(300deg, rgb(58, 235, 79), rgb(56, 180, 34), rgb(3, 73, 11));
+}
+
+.cartao .informacoes .complemento.sanji {
+    background: linear-gradient(300deg, rgb(62, 86, 241), rgb(26, 67, 181), rgb(4, 31, 108));
+}
+
+.cartao .informacoes .complemento.brook {
+    background: linear-gradient(300deg, rgb(231, 245, 76), rgb(182, 195, 31), rgb(149, 151, 7));
+}
+
+.cartao .informacoes .complemento.usopp {
+    background: linear-gradient(300deg, rgb(159, 135, 74), rgb(113, 91, 34), rgb(47, 35, 2));
+}
+
+.cartao .informacoes .complemento.chopper {
+    background: linear-gradient(300deg, rgb(251, 123, 208), rgb(194, 50, 151), rgb(155, 15, 99));
+}
+
+.cartao .informacoes .complemento.nami {
+    background: linear-gradient(300deg, rgb(250, 164, 82), rgb(236, 123, 42), rgb(188, 68, 3));
+}
+
+.cartao .informacoes .complemento.robin {
+    background: linear-gradient(300deg, rgb(140, 87, 230), rgb(123, 28, 146), rgb(62, 4, 91));
+}
+
+.cartao .informacoes .complemento.franky {
+    background: linear-gradient(300deg, rgb(118, 247, 251), rgb(41, 146, 146), rgb(4, 82, 102));
+}
+
+.cartao .informacoes .complemento .caveira {
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 5px;
+}
+
+.cartao .informacoes .complemento .titulo {
+    color: #f1ecff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 12px;
+    text-shadow: 1px 2px 3px #000000;
+    font-family: 'Merienda', cursive;
+}
+
+.cartao .informacoes .texto {
+    padding: 12px;
+    text-align: justify;
+    max-height: 105px;
+    overflow-y: auto;
+}
+
+.cartao .informacoes .texto .paragrafos {
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.rodape .copyright {
+    font-size: 20px;
+    color: #f6f3f3;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 2px 3px #000000;
+}
