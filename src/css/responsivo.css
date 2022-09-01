@@ -5,12 +5,12 @@
 
     .personagem-slider {
         padding: 0 15px;
-        gap: 10px;
+        gap: 20px;
     }
 
     .btn-seta {
-        height: 20px;
-        width: 20px;
+        height: 45px;
+        width: 45px;
         padding: 20px;
         display: flex;
         align-items: center;
